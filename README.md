@@ -18,9 +18,9 @@ For this assignment css and HTML were given to us to work with. I first added ti
         <div class = "saveBtn" id = "s6"><p>🖫</p></div>
       </div>
 ```
-These time blocks set up the hour on the left, the text area in the middle and the save button on the right with an icon. The ids of 6 and s6 the 6:00 time and are the same way for each of the subsequent hours. They also allow for easy reference within a for loop using the variable i.
+These time blocks set up the hour on the left, the text area in the middle and the save button on the right with an icon. The ids of 6, and s6, along with the 6:00 time and are the same way for each of the subsequent hours. They also allow for easy reference within a for loop using the variable i.
 
-Time is referenced using moment.js. 
+Now looking at the javascript file. Time is referenced using moment.js. 
 
 ```bash
     var displayTime = moment().format("MMM Do, YYYY hh:mm");
@@ -30,7 +30,7 @@ Time is referenced using moment.js.
 ```
 DisplayTime is displaying the current time at the top of the page, and current is the current time displayed in military time.
 
-The for loop created to assign each time block its relative css to receive a background color looks like this. 
+The for loop created to assign each time block its relative class in css to receive a background color looks like this. 
 
 ```bash
 for(var i = 6; i < 20; i ++){
@@ -52,10 +52,3 @@ $(".saveBtn").click(function() {
 })
 ```
 This function works by using this to grab the relative id of whatever button is clicked, and then makes creates a variable that holds the content written within that text Area. Siblings is used because the button and the textarea are siblings within the html. The local storage then sets the key value pair of button ID with the content stored inside the text area adjacent to that button. 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
